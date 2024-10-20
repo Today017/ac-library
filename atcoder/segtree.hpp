@@ -120,6 +120,8 @@ template <class S, S (*op)(S, S), S (*e)()> struct segtree {
         return 0;
     }
 
+    int get_size() const { return _n; }
+
   private:
     int _n, size, log;
     std::vector<S> d;

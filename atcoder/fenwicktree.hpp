@@ -30,6 +30,8 @@ template <class T> struct fenwick_tree {
         return sum(r) - sum(l);
     }
 
+    int size() const { return _n; }
+
   private:
     int _n;
     std::vector<U> data;

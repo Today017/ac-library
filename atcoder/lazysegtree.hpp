@@ -195,6 +195,8 @@ struct lazy_segtree {
         return 0;
     }
 
+    int get_size() { return _n; }
+
   private:
     int _n, size, log;
     std::vector<S> d;
